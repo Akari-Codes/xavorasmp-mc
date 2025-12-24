@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <link rel="icon" type="image/x-icon" href="../icon.png">
-<title>Akari MC | Custom Commands</title>
+<title>XavoraSMP | Custom Commands</title>
 <button onclick='window.location.replace("../")'>Back</button><br><br>
 <h1 style="text-align: center;">Custom Commands</h1>
 <select id="command_selector" onchange="reload_list()">
@@ -34,10 +34,6 @@
     -->
     <option value="all">All Commands</option>
     <optgroup label="Commands">
-    <option value="msg">Message A Player</option>
-    <option value="tp">Teleportation</option>
-    <option value="worlds">Worlds Swicher</option>
-    <option value="gui">Survival GUI Interface</option>
     </optgroup>
 </select>
 <div id="commands_container">
@@ -48,26 +44,6 @@
         <p>[info]</p>
     </div>
     -->
-    <div id="tp" class="commands">
-        <h3>Teleport</h3>
-        <p><code>/user-tp</code></p>
-        <p>Opens an interface that allows you to either enter co-ordinates or select a player to teleport to.</p>
-    </div>
-    <div id="msg" class="commands">
-        <h3>Message a Player</h3>
-        <p><code>/user-msg</code></p>
-        <p>Opens an interface to choose a player and type a message to send to chosen player</p>
-    </div>
-    <div id="worlds" class="commands">
-        <h3>Switch Between Worlds</h3>
-        <p><code>/worlds</code></p>
-        <p>Opens an interface to choose a world to switch too</p>
-    </div>
-    <div id="gui" class="commands">
-        <h3>Survival GUI Interface</h3>
-        <p><code>/gui</code></p>
-        <p>Collection of Buttones and GUI Interfaces in one Interface</p>
-    </div>
 </div>
 <script>
     function get_array() {
